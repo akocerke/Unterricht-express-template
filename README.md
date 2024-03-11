@@ -7,4 +7,3 @@ Basierend auf unserem ersten Testfall in der Datei ./tests/routes/todos/TodosRou
 
 ## Wie erwartet Fehler weil keine Testdaten in der Datenbank ```todo_app_test``` vorhanden sind
 
-<img src="image.png" alt="Beschreibung des Bildes" style="max-width: 500px;">
