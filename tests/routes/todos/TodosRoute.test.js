@@ -20,7 +20,7 @@ describe("GET /v1/todos/byid", () => {
     // Annahme: Es gibt mindestens ein ToDo in der Datenbank
     const todoId = 1; // Annahme: ID des vorhandenen ToDo
     const response = await request(app) // initialisiert eine HTTP-Anfrage an den Server
-      .get(`/v1/todos/byid/${todoId}`) // const todoId: 1 ist hinterlegt
+      .get(`/v1/todos/byid?to${todoId}`) // const todoId: 1 ist hinterlegt
       .expect("Content-Type", /json/) // json format wird zurück erwartet
       .expect(200); // HTTP-Statuscode 200  (OK) wird erwartet
 
