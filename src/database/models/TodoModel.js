@@ -30,6 +30,8 @@ const TodoModel = todoSequelize.define(
       allowNull: false,
     },
   },
+  {
+    timestamps: false},
   { tableName: "Todos" }
 );
 
