@@ -67,8 +67,8 @@ describe("Test Mutations (POST CREATE)", () => {
 
 describe("Test Mutations (PUT MARK)", () => {
   test("Test Mark Object as Done", async () => {
-    // Annahme: Eine Aufgabe mit der ID 123 existiert bereits
-    const todoId = 123;
+    // Annahme: Eine Aufgabe mit der ID 13 existiert bereits
+    const todoId = 13;
     const newIsDone = true;
 
     const response = await request(app)
@@ -97,7 +97,6 @@ describe("Test Mutations (PUT MARK)", () => {
       .expect("Content-Type", /json/)
       .expect(StatusCodes.OK);
 
-    // Überprüfen Sie die Antwort, wenn erforderlich
     expect(response.body.updatedTodoId).toBe(todoId);
   });
 });
@@ -106,7 +105,7 @@ describe("Test Mutations (PUT MARK)", () => {
 
 describe("Test Mutations (PUT UPDATE)", () => {
   test("Test Update Object", async () => {
-    // Annahme: Eine Aufgabe mit der ID 123 existiert bereits
+    // Annahme: Eine Aufgabe mit der ID 3 existiert bereits
     const todoId = 3;
     const newTask = "Neue Aufgabe";
     const newIsDone = true;
@@ -123,7 +122,6 @@ describe("Test Mutations (PUT UPDATE)", () => {
       .expect("Content-Type", /json/)
       .expect(StatusCodes.OK);
 
-    // Überprüfen Sie die Antwort, wenn erforderlich
     expect(response.body.updatedTodoId).toBe(todoId);
   });
 });
