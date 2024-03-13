@@ -84,7 +84,7 @@ describe("Test Mutations (PUT MARK)", () => {
     expect(response.body.updatedTodoId).toBe(todoId);
   });
   test("Test Mark Object as NOT Done", async () => {
-    // Annahme: Eine Aufgabe mit der ID 123 existiert bereits
+    // Annahme: Eine Aufgabe mit der ID 3 existiert bereits
     const todoId = 3;
     const newIsDone = false;
 
